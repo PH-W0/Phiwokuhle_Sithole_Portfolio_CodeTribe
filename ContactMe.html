@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About Me - Phiwokuhle's Portfolio</title>
+        <title>Contact Me - Phiwokuhle's Portfolio</title>
+         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav>
             <a href="/" class="logo">
                 <img src="logo.jpeg" alt="PH!!WO" width="150" height="150"></a>
 
-             <a href="index.html">Home</a>
-            <a href="aboutMe.html">About Me</a>
-            <a href="ContactMe.html">Contact Me</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="ContactMe.html">Contact Me</a>
+               
+             </div>
         </nav>
-
-         <section id="ContactMe">
+        <form class="contact-form">
             <h2>Contact Me</h2>
-            <p><strong>Email:</strong>siphikazisithole@gmail.com</p>
-            <p><strong>Phone:</strong> +27 68 976 1825</p>
-        </section>
+            <label for="name" id="name-label">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email" id="email-label">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message" id="message-label">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+
+        
     </body>
 </html>
