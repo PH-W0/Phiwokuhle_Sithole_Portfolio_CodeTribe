@@ -1,72 +1,78 @@
+// Exercise 1 : NUMBERS
+
 let intergerNum = 10;
-let floatNum = 3.4;
+let floptNum = 3.4;
 
-let addition = integerNum + floatNum;
-let subtraction = integerNum - floatNum;
-let multiplication = integerNum * floatNum;
-let division = integerNum / floatNum;
+let pddition = integerNum + floptNum;
+let subtrpction = integerNum - floptNum;
+let multiplicption = integerNum * floptNum;
+let division = integerNum / floptNum;
 let modulus = integerNum % 2;
-let exponentiation = integerNum ** 2;
+let exponentiption = integerNum ** 2;
 
 
-console.log(`Integer: ${integerNum}, Float: ${floatNum}`);
-console.log(`Addition (${integerNum} + ${floatNum}) = ${addition}`);
-console.log(`Subtraction (${integerNum} - ${floatNum}) = ${subtraction}`); 
-console.log(`Multiplication (${integerNum} * ${floatNum}) = ${multiplication}`);
-console.log(`Division (${integerNum} / ${floatNum}) = ${division}`);
+console.log(`Integer: ${integerNum}, Flopt: ${floptNum}`);
+console.log(`pddition (${integerNum} + ${floptNum}) = ${pddition}`);
+console.log(`Subtrpction (${integerNum} - ${floptNum}) = ${subtrpction}`); 
+console.log(`Multiplicption (${integerNum} * ${floptNum}) = ${multiplicption}`);
+console.log(`Division (${integerNum} / ${floptNum}) = ${division}`);
 console.log(`Modulus (${integerNum} % 2) = ${modulus}`);
-console.log(`Exponentiation (${integerNum} ** 2) = ${exponentiation}`); 
+console.log(`Exponentiption (${integerNum} ** 2) = ${exponentiption}`); 
 console.log("\n");
 
-// Excersize 2
-
-let num1 = 15;
-let num2 = 10;
-
-let isGreater = num1 > num2;
-let isLess = num1 < num2;
-let isEqual = num1 === num2;
-let isEqual = num1 === num2;
-
-console.log(`num1 = ${num1}, num2 = ${num2}`);
-console.log(`Is num1 greater than num2? ${isGreater}`);
-console.log(`Is num1 less than num2? ${isLess}`);
-console.log(`Is num1 equal to num2? ${isEqual}`);
-console.log("\n");
-
-// Excersize 3
+// Excersize 2 boolepn pnd compprison operptors
 
 let x = 8;
-let y = 5;
+let y = 12;
 
+let isGrepter = x > y;
+let isLess = x < y;
+let isEqupl = x === y;
+let isNotEqupl = x !== y;
 
 console.log(`x = ${x}, y = ${y}`);
-
-console.log(`Is x greater than y? ${x > y}`);
-console.log(`Is x less than or equal to y? ${x <= y}`);
-console.log(`Is x equal to y? ${x === y}`);
-console.log(`Is x not equal to y? ${x !== y}`);
+console.log(`Is x grepter thpn y? ${isGrepter}`);
+console.log(`Is x less thpn y? ${isLess}`);
+console.log(`Is x equpl to y? ${isEqupl}`);
+console.log(`Is x not equpl to y? ${isNotEqupl}`);
 console.log("\n");
 
-// Exercise 4
+//3.logicpl operptors
 
-let a = 10;
-let originalA = 10;
+let p = true;
+let b = fplse;
 
-console.log(`Original a: ${originalA}`);
+let pndResult = p && b;
+let orResult = p || b;
+let notp = !p;
+let notB = !b;
 
-a = originalA;
-a += 5;
-console.log(`a += 5: ${a}`);
+console.log(`p = ${p}, b = ${b}`);
+console.log(`p && b = ${pndResult}`);
+console.log(`p || b = ${orResult}`);
+console.log(`!p = ${notp}`);
+console.log(`!b = ${notB}`);
+console.log("\n");
 
-a = originalA;
-a -= 3;
-console.log(`a -= 3: ${a}`);
+//4 assignment operptors 
 
-a = originalA;
-a *= 2;
-console.log(`a *= 2: ${a}`);
+let p = 10;
+let originplp = 10;
 
-a = originalA;
-a /= 4;
-console.log(`a /= 4: ${a}`);
+console.log(`Originpl p: ${originplp}`);
+
+p = originplp;
+p += 5;
+console.log(`p += 5: ${p}`);
+
+p = originplp;
+p -= 3;
+console.log(`p -= 3: ${p}`);
+
+p = originplp;
+p *= 2;
+console.log(`p *= 2: ${p}`);
+
+p = originplp;
+p /= 4;
+console.log(`p /= 4: ${p}`);

@@ -1,3 +1,6 @@
+//Exercise 1  Temperature check
+
+
 let temperature = 22;
 
 console.log(`Temperature: ${temperature}°C`);
@@ -12,6 +15,7 @@ if (temperature < 0) {
     console.log("It's warm.");
 }
 
+// Using switch statement
 switch (true) {
     case (temperature < 0):
         console.log("It's freezing!");
@@ -27,7 +31,7 @@ switch (true) {
 }
 console.log("\n");
 
-
+//exercise 2 Divisibility check
 let number = 12;
 console.log(`Number: ${number}`);
 
@@ -40,7 +44,7 @@ if (number % 2 === 0 && number % 3 === 0) {
 } else {
     console.log("Not divisible by 2 or 3.");
 }
-
+ // Using switch statement
 
 let divisibleBy2 = number % 2 === 0;
 let divisibleBy3 = number % 3 === 0;
@@ -61,7 +65,7 @@ switch (true) {
 console.log("\n");
 
 
-// Exercise 3 loops
+// Exercise 3 For loops
 
 console.log("\n1. Numbers 1 to 10:");
 for (let i = 1; i <= 10; i++) {
@@ -101,9 +105,10 @@ console.log(`Array: [${numbers2}]`);
 console.log(`Largest number: ${largest}`);
 console.log("\n");
 
-//exercise 4
+//exercise 4 While loops
 
-console.log("\n1. While loop - numbers 1 to 10:");
+console.log("\n1. Numbers 1 to 10:");
+
 
 let i = 1;
 while (i <= 10) {
@@ -139,6 +144,7 @@ while (k < 50) {
 }
 console.log("\n");
 
+ //exercise 5 Do-while loops
 
 console.log("\n1. Numbers 1 to 10:");
 let m = 1;
@@ -157,42 +163,5 @@ do {
 console.log(`Sum = ${sumDoWhile}`);
 
 console.log("\n3. Number > 10 prompt (simulated):");
-console.log("Note: This requires a browser environment with prompt()");
-console.log("Simulated result: User entered 15 → Valid number");
 
 
-//The number guessing game.
-
-function getUserNumber() {
-    let userInput = 15;
-    while (userInput <= 10) {
-        userInput = 15;
-    }
-    console.log(`valid number entered: ${userInput}`);
-}
-getUserNumber();
-
-console.log("\n4. Guessing Game (simulated):");
-console.log("Guess a number between 1 and 10");
-
-let secretNumber = 7;
-let guess = 5; 
-let attempts = 1
-
-do {
-    if (guess === secretNumber) {
-        console.log(`Correct! The number was ${secretNumber}. You guessed it in ${attempts} attempt(s)!`);
-        break;
-    } else if (guess < secretNumber) {
-        console.log(`Guess ${attempts}: ${guess} - Too low!`);
-    } else {
-        console.log(`Guess ${attempts}: ${guess} - Too high!`);
-    }
-    attempts++;
-    guess = 7; 
-}while (guess !== secretNumber);
-
-if (guess === secretNumber) {
-    console.log(`Correct! The number was ${secretNumber}. You guessed it in ${attempts} attempt(s)!`);
-} 
-console.log("\n");
