@@ -1,32 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Contact Me - Phiwokuhle's Portfolio</title>
-         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav>
-            <a href="/" class="logo">
-                <img src="logo.jpeg" alt="PH!!WO" width="150" height="150"></a>
-
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="logo.jpeg" alt="PH!!WO" width="150" height="150">
+            </a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="aboutMe.html">About Me</a>
                 <a href="ContactMe.html">Contact Me</a>
-               
-             </div>
+            </div>
+            <input type="checkbox" id="burger-toggle" class="burger-toggle">
+            <label for="burger-toggle" class="burger-btn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="mobile-menu">
+                <a href="index.html">Home</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="ContactMe.html">Contact Me</a>
+            </div>
         </nav>
+
         <form class="contact-form">
             <h2>Contact Me</h2>
-            <label for="name" id="name-label">Name:</label>
+            <label for="name">Name:</label>
             <input type="text" id="name" name="name">
-            <label for="email" id="email-label">Email:</label>
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email">
-            <label for="message" id="message-label">Message:</label>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea>
-            <input type="submit" value="Submit" id="submit">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <input type="submit" value="Send Message" id="submit">
         </form>
 
-        
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Location</h4>
+                    <address class="footer-address">
+                        <span>Durban, KwaZulu-Natal</span>
+                        <span>South Africa</span>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <address class="footer-address">
+                        <a href="tel:+27000000000">+27 689761825</a>
+                        <a href="mailto:siphikazisithole@gmail.com">siphikazisithole@gmail.com</a>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigate</h4>
+                    <nav class="footer-nav">
+                        <a href="index.html">Home</a>
+                        <a href="aboutMe.html">About Me</a>
+                        <a href="ContactMe.html">Contact Me</a>
+                    </nav>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2026 Phiwokuhle Sithole. All rights reserved.</p>
+        </footer>
     </body>
 </html>
